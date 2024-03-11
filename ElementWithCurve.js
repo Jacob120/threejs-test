@@ -22,15 +22,15 @@ import calculateHoles from "./curves_utils/calculateHoles";
 import calculateSides from "./curves_utils/calculateSides";
 const ElementWithCurve = ({
   name,
-  krawedzie,
-  wymiary,
-  materialy,
-  obrocenie,
+  krawedzie, // edges
+  wymiary, // dimensions
+  materialy, // materials
+  obrocenie, // rotation
   visible,
-  grubosc,
+  grubosc, // thickness
   edges,
-  krzywe,
-  kierunek,
+  krzywe, // curves
+  kierunek, // direction
   has3dModel,
   models,
   curvesParams,
@@ -48,7 +48,7 @@ dla extrusion [faces, sides]
 */
   const [metal, setMetal] = useState(false);
   const [drazekN, setDrazekN] = useState(false);
-  const [_grubosc, set_grubosc] = useState(grubosc);
+  const [_grubosc, set_grubosc] = useState(grubosc); // thickness
 
   const loader = new TextureLoader();
 
